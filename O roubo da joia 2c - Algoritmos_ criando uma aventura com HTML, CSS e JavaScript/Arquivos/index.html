@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>O roubo da joia</title>
+</head>
+
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="cenario-passo0.png" alt="">
+            <p>Você é um investigador e está investigando o caso de uma joia roubada. A joia pertencia a um museu
+                popular da cidade, quando foi roubada misteriosamente em uma noite de sábado. Você chega no museu,
+                pronto para buscar pistas e interrogar os prováveis suspeitos. Os únicos que estavam presentes na hora
+                do roubo eram o recepcionista e o curador do museu. Você decide interrogar...</p>
+            <button class="btn-proximo" data-proximo="1">O curador</button>
+            <button class="btn-proximo" data-proximo="2">O recepcionista</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <img src="cenario-passo1.png" alt="">
+            <p>O curador afirmou estar presente no momento em que a joia foi roubada, mas nega ter visto o crime. As
+                descrições dele batem exatamente com o que foi relatado, exceto o horário descrito pelo curador, quando
+                questionado, ele se desculpa e diz apenas que se confundiu.
+                Você decide...</p>
+            <button class="btn-proximo" data-proximo="3">Não acreditar no curador</button>
+            <button class="btn-proximo" data-proximo="4">Acreditar na palavra do curador</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="cenario-passo1.png" alt="">
+            <p>
+                O recepcionista descreve tudo o que aconteceu no dia em que a joia sumiu, segundo sua descrição, ele
+                teria saído do museu exatamente durante o roubo.
+                Você decide...</p>
+            <button class="btn-proximo" data-proximo="5">Acreditar no recepcionista</button>
+            <button class="btn-proximo" data-proximo="6">Não acreditar no recepcionista.</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <img src="cenario-passo1.png" alt="">
+            <p>O curador evidentemente fica nervoso, você começa a pressioná-lo e ele começa a se contradizer.</p>
+            <button class="btn-proximo" data-proximo="7">O curador confessa o crime</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desitindo da aventura">
+            <p>Você acredita na palavra do curador, pois é normal se confundir em momentos de nervosismo. Você nunca
+                conseguiu descobrir quem roubou a joia.
+                (Você perdeu)</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <img src="cenario-passo1.png" alt="">
+            <p>O relato do recepcionista pareceu preciso e convincente o suficiente mediante os fatos, ele se junta a
+                você e fornece mais informações sobre o caso, agora seu principal suspeito é o curador do museu.</p>
+            <button class="btn-proximo" data-proximo="7">Interrogar o curador</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <img src="cenario-passo1.png" alt="">
+            <p>Você não acredita na palavra do recepcionista e segue com suas buscas, procurando pistas pelas câmeras de
+                segurança, você vê que de fato o recepcionista havia saído do museu às 22:00, o roubo ocorreu
+                aproximadamente às 22:10. Porém, ao observar as câmeras da sala da joia, você percebe que o curador foi
+                o último a entrar naquela sala. Alguns minutos depois, a energia do museu é desligada e as câmeras
+                desligadas.</p>
+            <button class="btn-proximo" data-proximo="8">Interrogar o curador</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <img src="cenario-passo1.png" alt="">
+            <p>O curador, se sentindo pressionado, confessa o crime. Ele havia vendido a joia do museu para um criminoso
+                já conhecido pela polícia. Com essa nova informação, você decide...</p>
+            <button class="btn-proximo" data-proximo="9">Relatar o que descobriu para a polícia</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <img src="cenario-passo1.png" alt="">
+            <p>O curador afirmou estar presente no momento em que a joia foi roubada, mas nega ter visto o crime. As
+                descrições dele batem exatamente com o que foi relatado, exceto o horário descrito pelo curador, quando
+                questionado, ele se desculpa e diz apenas que se confundiu. O curador evidentemente fica nervoso, você
+                começa a pressioná-lo e ele começa a se contradizer.</p>
+            <button class="btn-proximo" data-proximo="7">O curador confessa o crime</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <img src="cenario-passo1.png" alt="">
+            <p>Você relata todas as informações obtidas sobre sua investigação para a polícia, que prende o curador e
+                poucos dias depois finalmente encontra e prende o criminoso, assim concluindo mais um caso.
+            </p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
